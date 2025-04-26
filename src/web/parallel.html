@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>A* Parallel Time by Grid Size</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body style="padding: 0 20%">
+  <h1>Parallel A* Time vs Grid Size</h1>
+  <canvas id="sizeChart" width="800" height="400"></canvas>
+  <script>
+    async function drawChart() {
+      const res = await fetch('/parallel');
+      const data = await res.json();
+
+      const labels = data.map(d => `${d.size}x${d.size}`);
+      const times = data.map(d => +d.avgTime);
+
+      new Chart(document.getElementById('sizeChart'), {
+        type: 'line',
+        data: {
+          labels,
+          datasets: [{
+            label: 'Avg Execution Time (ms)',
+            data: times,
+            borderColor: 'green',
+            fill: false
+          }]
+        },
+        options: {
+          scales: {
+            y: { beginAtZero: true, title: { display: true, text: 'Time (ms)' } },
+            x: { title: { display: true, text: 'Grid Size' } }
+          }
+        }
+      });
+    }
+
+    drawChart();
+  </script>
+</body>
+</html>

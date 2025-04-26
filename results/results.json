@@ -1,0 +1,2342 @@
+[
+  {
+    "grid": "16x16",
+    "trial": 1,
+    "sequential": {
+      "found": true,
+      "steps": 31,
+      "time": 1.67
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 31,
+        "time": 1.26,
+        "speedup": "1.33"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 31,
+        "time": 0.85,
+        "speedup": "1.96"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 31,
+        "time": 0.69,
+        "speedup": "2.42"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 33,
+        "time": 1,
+        "speedup": "1.67"
+      }
+    ]
+  },
+  {
+    "grid": "16x16",
+    "trial": 2,
+    "sequential": {
+      "found": true,
+      "steps": 31,
+      "time": 0.58
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 31,
+        "time": 0.94,
+        "speedup": "0.62"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 31,
+        "time": 0.75,
+        "speedup": "0.77"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 31,
+        "time": 0.65,
+        "speedup": "0.89"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 31,
+        "time": 0.96,
+        "speedup": "0.60"
+      }
+    ]
+  },
+  {
+    "grid": "16x16",
+    "trial": 3,
+    "sequential": {
+      "found": true,
+      "steps": 31,
+      "time": 0.43
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 31,
+        "time": 0.83,
+        "speedup": "0.52"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 31,
+        "time": 0.54,
+        "speedup": "0.80"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 31,
+        "time": 1.45,
+        "speedup": "0.30"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 31,
+        "time": 1.21,
+        "speedup": "0.36"
+      }
+    ]
+  },
+  {
+    "grid": "16x16",
+    "trial": 4,
+    "sequential": {
+      "found": true,
+      "steps": 31,
+      "time": 0.36
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 31,
+        "time": 0.52,
+        "speedup": "0.69"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 31,
+        "time": 0.61,
+        "speedup": "0.59"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 31,
+        "time": 0.33,
+        "speedup": "1.09"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 31,
+        "time": 0.32,
+        "speedup": "1.13"
+      }
+    ]
+  },
+  {
+    "grid": "16x16",
+    "trial": 5,
+    "sequential": {
+      "found": true,
+      "steps": 31,
+      "time": 0.63
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 31,
+        "time": 0.39,
+        "speedup": "1.62"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 31,
+        "time": 0.44,
+        "speedup": "1.43"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 31,
+        "time": 1.32,
+        "speedup": "0.48"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 31,
+        "time": 0.33,
+        "speedup": "1.91"
+      }
+    ]
+  },
+  {
+    "grid": "16x16",
+    "trial": 6,
+    "sequential": {
+      "found": false,
+      "steps": 0,
+      "time": 0.01
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": false,
+        "steps": 0,
+        "time": 0.02,
+        "speedup": "0.50"
+      },
+      {
+        "threads": 4,
+        "found": false,
+        "steps": 0,
+        "time": 0.02,
+        "speedup": "0.50"
+      },
+      {
+        "threads": 8,
+        "found": false,
+        "steps": 0,
+        "time": 0.02,
+        "speedup": "0.50"
+      },
+      {
+        "threads": 16,
+        "found": false,
+        "steps": 0,
+        "time": 0.01,
+        "speedup": "1.00"
+      }
+    ]
+  },
+  {
+    "grid": "16x16",
+    "trial": 7,
+    "sequential": {
+      "found": true,
+      "steps": 31,
+      "time": 0.2
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 31,
+        "time": 0.23,
+        "speedup": "0.87"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 31,
+        "time": 0.47,
+        "speedup": "0.43"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 31,
+        "time": 0.26,
+        "speedup": "0.77"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 31,
+        "time": 0.29,
+        "speedup": "0.69"
+      }
+    ]
+  },
+  {
+    "grid": "16x16",
+    "trial": 8,
+    "sequential": {
+      "found": true,
+      "steps": 31,
+      "time": 0.31
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 31,
+        "time": 0.6,
+        "speedup": "0.52"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 31,
+        "time": 0.36,
+        "speedup": "0.86"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 31,
+        "time": 0.56,
+        "speedup": "0.55"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 31,
+        "time": 1.01,
+        "speedup": "0.31"
+      }
+    ]
+  },
+  {
+    "grid": "16x16",
+    "trial": 9,
+    "sequential": {
+      "found": true,
+      "steps": 31,
+      "time": 0.35
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 31,
+        "time": 0.48,
+        "speedup": "0.73"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 31,
+        "time": 0.31,
+        "speedup": "1.13"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 31,
+        "time": 0.43,
+        "speedup": "0.81"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 31,
+        "time": 0.29,
+        "speedup": "1.21"
+      }
+    ]
+  },
+  {
+    "grid": "16x16",
+    "trial": 10,
+    "sequential": {
+      "found": true,
+      "steps": 31,
+      "time": 0.32
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 31,
+        "time": 0.64,
+        "speedup": "0.50"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 31,
+        "time": 0.3,
+        "speedup": "1.07"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 31,
+        "time": 0.32,
+        "speedup": "1.00"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 31,
+        "time": 0.3,
+        "speedup": "1.07"
+      }
+    ]
+  },
+  {
+    "grid": "32x32",
+    "trial": 1,
+    "sequential": {
+      "found": true,
+      "steps": 63,
+      "time": 2.9
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 63,
+        "time": 2.71,
+        "speedup": "1.07"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 63,
+        "time": 2.35,
+        "speedup": "1.23"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 63,
+        "time": 1.8,
+        "speedup": "1.61"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 63,
+        "time": 1.88,
+        "speedup": "1.54"
+      }
+    ]
+  },
+  {
+    "grid": "32x32",
+    "trial": 2,
+    "sequential": {
+      "found": true,
+      "steps": 63,
+      "time": 2.28
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 63,
+        "time": 1.98,
+        "speedup": "1.15"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 63,
+        "time": 1.64,
+        "speedup": "1.39"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 63,
+        "time": 1.48,
+        "speedup": "1.54"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 63,
+        "time": 2.77,
+        "speedup": "0.82"
+      }
+    ]
+  },
+  {
+    "grid": "32x32",
+    "trial": 3,
+    "sequential": {
+      "found": true,
+      "steps": 63,
+      "time": 2.88
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 63,
+        "time": 2.8,
+        "speedup": "1.03"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 63,
+        "time": 1.91,
+        "speedup": "1.51"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 63,
+        "time": 1.61,
+        "speedup": "1.79"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 63,
+        "time": 2.14,
+        "speedup": "1.35"
+      }
+    ]
+  },
+  {
+    "grid": "32x32",
+    "trial": 4,
+    "sequential": {
+      "found": true,
+      "steps": 63,
+      "time": 0.97
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 63,
+        "time": 1.34,
+        "speedup": "0.72"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 63,
+        "time": 1.34,
+        "speedup": "0.72"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 63,
+        "time": 1.66,
+        "speedup": "0.58"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 63,
+        "time": 1.98,
+        "speedup": "0.49"
+      }
+    ]
+  },
+  {
+    "grid": "32x32",
+    "trial": 5,
+    "sequential": {
+      "found": false,
+      "steps": 0,
+      "time": 1.91
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": false,
+        "steps": 0,
+        "time": 1.89,
+        "speedup": "1.01"
+      },
+      {
+        "threads": 4,
+        "found": false,
+        "steps": 0,
+        "time": 2.1,
+        "speedup": "0.91"
+      },
+      {
+        "threads": 8,
+        "found": false,
+        "steps": 0,
+        "time": 1.01,
+        "speedup": "1.89"
+      },
+      {
+        "threads": 16,
+        "found": false,
+        "steps": 0,
+        "time": 1.01,
+        "speedup": "1.89"
+      }
+    ]
+  },
+  {
+    "grid": "32x32",
+    "trial": 6,
+    "sequential": {
+      "found": true,
+      "steps": 63,
+      "time": 1.14
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 63,
+        "time": 1.47,
+        "speedup": "0.78"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 63,
+        "time": 1.35,
+        "speedup": "0.84"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 63,
+        "time": 0.78,
+        "speedup": "1.46"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 63,
+        "time": 1.16,
+        "speedup": "0.98"
+      }
+    ]
+  },
+  {
+    "grid": "32x32",
+    "trial": 7,
+    "sequential": {
+      "found": true,
+      "steps": 63,
+      "time": 1.18
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 63,
+        "time": 1.92,
+        "speedup": "0.61"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 63,
+        "time": 1.28,
+        "speedup": "0.92"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 63,
+        "time": 1.06,
+        "speedup": "1.11"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 63,
+        "time": 1.19,
+        "speedup": "0.99"
+      }
+    ]
+  },
+  {
+    "grid": "32x32",
+    "trial": 8,
+    "sequential": {
+      "found": false,
+      "steps": 0,
+      "time": 1.83
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": false,
+        "steps": 0,
+        "time": 1.78,
+        "speedup": "1.03"
+      },
+      {
+        "threads": 4,
+        "found": false,
+        "steps": 0,
+        "time": 1.39,
+        "speedup": "1.32"
+      },
+      {
+        "threads": 8,
+        "found": false,
+        "steps": 0,
+        "time": 1.32,
+        "speedup": "1.39"
+      },
+      {
+        "threads": 16,
+        "found": false,
+        "steps": 0,
+        "time": 1.03,
+        "speedup": "1.78"
+      }
+    ]
+  },
+  {
+    "grid": "32x32",
+    "trial": 9,
+    "sequential": {
+      "found": true,
+      "steps": 63,
+      "time": 1.52
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 63,
+        "time": 1,
+        "speedup": "1.52"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 63,
+        "time": 1.23,
+        "speedup": "1.24"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 63,
+        "time": 0.77,
+        "speedup": "1.97"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 63,
+        "time": 1.16,
+        "speedup": "1.31"
+      }
+    ]
+  },
+  {
+    "grid": "32x32",
+    "trial": 10,
+    "sequential": {
+      "found": false,
+      "steps": 0,
+      "time": 0.01
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": false,
+        "steps": 0,
+        "time": 0.02,
+        "speedup": "0.50"
+      },
+      {
+        "threads": 4,
+        "found": false,
+        "steps": 0,
+        "time": 0.01,
+        "speedup": "1.00"
+      },
+      {
+        "threads": 8,
+        "found": false,
+        "steps": 0,
+        "time": 0.01,
+        "speedup": "1.00"
+      },
+      {
+        "threads": 16,
+        "found": false,
+        "steps": 0,
+        "time": 0.01,
+        "speedup": "1.00"
+      }
+    ]
+  },
+  {
+    "grid": "64x64",
+    "trial": 1,
+    "sequential": {
+      "found": true,
+      "steps": 127,
+      "time": 7.39
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 127,
+        "time": 7.3,
+        "speedup": "1.01"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 127,
+        "time": 6.06,
+        "speedup": "1.22"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 127,
+        "time": 4.49,
+        "speedup": "1.65"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 127,
+        "time": 4.78,
+        "speedup": "1.55"
+      }
+    ]
+  },
+  {
+    "grid": "64x64",
+    "trial": 2,
+    "sequential": {
+      "found": true,
+      "steps": 127,
+      "time": 8.31
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 127,
+        "time": 9.67,
+        "speedup": "0.86"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 127,
+        "time": 5.89,
+        "speedup": "1.41"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 127,
+        "time": 4.7,
+        "speedup": "1.77"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 127,
+        "time": 3.94,
+        "speedup": "2.11"
+      }
+    ]
+  },
+  {
+    "grid": "64x64",
+    "trial": 3,
+    "sequential": {
+      "found": true,
+      "steps": 127,
+      "time": 11.4
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 127,
+        "time": 8.54,
+        "speedup": "1.33"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 127,
+        "time": 6.76,
+        "speedup": "1.69"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 127,
+        "time": 5.85,
+        "speedup": "1.95"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 127,
+        "time": 5.5,
+        "speedup": "2.07"
+      }
+    ]
+  },
+  {
+    "grid": "64x64",
+    "trial": 4,
+    "sequential": {
+      "found": true,
+      "steps": 127,
+      "time": 7.84
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 127,
+        "time": 7.52,
+        "speedup": "1.04"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 127,
+        "time": 5.7,
+        "speedup": "1.38"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 127,
+        "time": 4.41,
+        "speedup": "1.78"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 127,
+        "time": 3.3,
+        "speedup": "2.38"
+      }
+    ]
+  },
+  {
+    "grid": "64x64",
+    "trial": 5,
+    "sequential": {
+      "found": false,
+      "steps": 0,
+      "time": 0.02
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": false,
+        "steps": 0,
+        "time": 0.02,
+        "speedup": "1.00"
+      },
+      {
+        "threads": 4,
+        "found": false,
+        "steps": 0,
+        "time": 0.01,
+        "speedup": "2.00"
+      },
+      {
+        "threads": 8,
+        "found": false,
+        "steps": 0,
+        "time": 0.01,
+        "speedup": "2.00"
+      },
+      {
+        "threads": 16,
+        "found": false,
+        "steps": 0,
+        "time": 0.01,
+        "speedup": "2.00"
+      }
+    ]
+  },
+  {
+    "grid": "64x64",
+    "trial": 6,
+    "sequential": {
+      "found": true,
+      "steps": 127,
+      "time": 7.08
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 127,
+        "time": 6.07,
+        "speedup": "1.17"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 127,
+        "time": 5.45,
+        "speedup": "1.30"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 127,
+        "time": 3.61,
+        "speedup": "1.96"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 127,
+        "time": 3.76,
+        "speedup": "1.88"
+      }
+    ]
+  },
+  {
+    "grid": "64x64",
+    "trial": 7,
+    "sequential": {
+      "found": true,
+      "steps": 127,
+      "time": 6.37
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 127,
+        "time": 6.18,
+        "speedup": "1.03"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 127,
+        "time": 4.28,
+        "speedup": "1.49"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 127,
+        "time": 3.96,
+        "speedup": "1.61"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 127,
+        "time": 3.78,
+        "speedup": "1.69"
+      }
+    ]
+  },
+  {
+    "grid": "64x64",
+    "trial": 8,
+    "sequential": {
+      "found": true,
+      "steps": 127,
+      "time": 8.78
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 127,
+        "time": 7.45,
+        "speedup": "1.18"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 127,
+        "time": 5.82,
+        "speedup": "1.51"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 127,
+        "time": 5.3,
+        "speedup": "1.66"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 127,
+        "time": 3.93,
+        "speedup": "2.23"
+      }
+    ]
+  },
+  {
+    "grid": "64x64",
+    "trial": 9,
+    "sequential": {
+      "found": true,
+      "steps": 127,
+      "time": 8.16
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 127,
+        "time": 7.89,
+        "speedup": "1.03"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 127,
+        "time": 5.39,
+        "speedup": "1.51"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 127,
+        "time": 5.11,
+        "speedup": "1.60"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 127,
+        "time": 3.19,
+        "speedup": "2.56"
+      }
+    ]
+  },
+  {
+    "grid": "64x64",
+    "trial": 10,
+    "sequential": {
+      "found": true,
+      "steps": 127,
+      "time": 8.21
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 127,
+        "time": 6.65,
+        "speedup": "1.23"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 127,
+        "time": 6.42,
+        "speedup": "1.28"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 127,
+        "time": 5.69,
+        "speedup": "1.44"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 127,
+        "time": 3.96,
+        "speedup": "2.07"
+      }
+    ]
+  },
+  {
+    "grid": "128x128",
+    "trial": 1,
+    "sequential": {
+      "found": false,
+      "steps": 0,
+      "time": 103.49
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": false,
+        "steps": 0,
+        "time": 104.7,
+        "speedup": "0.99"
+      },
+      {
+        "threads": 4,
+        "found": false,
+        "steps": 0,
+        "time": 73.72,
+        "speedup": "1.40"
+      },
+      {
+        "threads": 8,
+        "found": false,
+        "steps": 0,
+        "time": 49.57,
+        "speedup": "2.09"
+      },
+      {
+        "threads": 16,
+        "found": false,
+        "steps": 0,
+        "time": 35.22,
+        "speedup": "2.94"
+      }
+    ]
+  },
+  {
+    "grid": "128x128",
+    "trial": 2,
+    "sequential": {
+      "found": true,
+      "steps": 255,
+      "time": 61.09
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 255,
+        "time": 64.06,
+        "speedup": "0.95"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 255,
+        "time": 44.26,
+        "speedup": "1.38"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 255,
+        "time": 29.23,
+        "speedup": "2.09"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 255,
+        "time": 23.2,
+        "speedup": "2.63"
+      }
+    ]
+  },
+  {
+    "grid": "128x128",
+    "trial": 3,
+    "sequential": {
+      "found": true,
+      "steps": 255,
+      "time": 71.98
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 255,
+        "time": 79.21,
+        "speedup": "0.91"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 255,
+        "time": 46.77,
+        "speedup": "1.54"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 255,
+        "time": 33.99,
+        "speedup": "2.12"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 255,
+        "time": 23.69,
+        "speedup": "3.04"
+      }
+    ]
+  },
+  {
+    "grid": "128x128",
+    "trial": 4,
+    "sequential": {
+      "found": false,
+      "steps": 0,
+      "time": 99.58
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": false,
+        "steps": 0,
+        "time": 105.43,
+        "speedup": "0.94"
+      },
+      {
+        "threads": 4,
+        "found": false,
+        "steps": 0,
+        "time": 67.28,
+        "speedup": "1.48"
+      },
+      {
+        "threads": 8,
+        "found": false,
+        "steps": 0,
+        "time": 47.61,
+        "speedup": "2.09"
+      },
+      {
+        "threads": 16,
+        "found": false,
+        "steps": 0,
+        "time": 34.37,
+        "speedup": "2.90"
+      }
+    ]
+  },
+  {
+    "grid": "128x128",
+    "trial": 5,
+    "sequential": {
+      "found": true,
+      "steps": 255,
+      "time": 73.75
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 255,
+        "time": 84.27,
+        "speedup": "0.88"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 255,
+        "time": 50.59,
+        "speedup": "1.46"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 255,
+        "time": 36.52,
+        "speedup": "2.02"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 255,
+        "time": 19.64,
+        "speedup": "3.76"
+      }
+    ]
+  },
+  {
+    "grid": "128x128",
+    "trial": 6,
+    "sequential": {
+      "found": true,
+      "steps": 255,
+      "time": 65.87
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 255,
+        "time": 71.93,
+        "speedup": "0.92"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 255,
+        "time": 45.65,
+        "speedup": "1.44"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 255,
+        "time": 29.07,
+        "speedup": "2.27"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 255,
+        "time": 18.91,
+        "speedup": "3.48"
+      }
+    ]
+  },
+  {
+    "grid": "128x128",
+    "trial": 7,
+    "sequential": {
+      "found": true,
+      "steps": 255,
+      "time": 40.61
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 255,
+        "time": 41.43,
+        "speedup": "0.98"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 255,
+        "time": 27.81,
+        "speedup": "1.46"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 255,
+        "time": 20.37,
+        "speedup": "1.99"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 255,
+        "time": 18.17,
+        "speedup": "2.24"
+      }
+    ]
+  },
+  {
+    "grid": "128x128",
+    "trial": 8,
+    "sequential": {
+      "found": true,
+      "steps": 255,
+      "time": 93.94
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 255,
+        "time": 101,
+        "speedup": "0.93"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 255,
+        "time": 61.64,
+        "speedup": "1.52"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 255,
+        "time": 32.09,
+        "speedup": "2.93"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 255,
+        "time": 27.9,
+        "speedup": "3.37"
+      }
+    ]
+  },
+  {
+    "grid": "128x128",
+    "trial": 9,
+    "sequential": {
+      "found": true,
+      "steps": 255,
+      "time": 65.44
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 255,
+        "time": 69.33,
+        "speedup": "0.94"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 255,
+        "time": 44.62,
+        "speedup": "1.47"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 255,
+        "time": 17.33,
+        "speedup": "3.78"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 255,
+        "time": 36.53,
+        "speedup": "1.79"
+      }
+    ]
+  },
+  {
+    "grid": "128x128",
+    "trial": 10,
+    "sequential": {
+      "found": true,
+      "steps": 255,
+      "time": 82.39
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 255,
+        "time": 73.54,
+        "speedup": "1.12"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 255,
+        "time": 56.32,
+        "speedup": "1.46"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 255,
+        "time": 35.23,
+        "speedup": "2.34"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 255,
+        "time": 30.21,
+        "speedup": "2.73"
+      }
+    ]
+  },
+  {
+    "grid": "256x256",
+    "trial": 1,
+    "sequential": {
+      "found": true,
+      "steps": 511,
+      "time": 734.85
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 511,
+        "time": 891.39,
+        "speedup": "0.82"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 511,
+        "time": 488.69,
+        "speedup": "1.50"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 511,
+        "time": 311.07,
+        "speedup": "2.36"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 511,
+        "time": 178.46,
+        "speedup": "4.12"
+      }
+    ]
+  },
+  {
+    "grid": "256x256",
+    "trial": 2,
+    "sequential": {
+      "found": false,
+      "steps": 0,
+      "time": 0.01
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": false,
+        "steps": 0,
+        "time": 0.02,
+        "speedup": "0.50"
+      },
+      {
+        "threads": 4,
+        "found": false,
+        "steps": 0,
+        "time": 0.01,
+        "speedup": "1.00"
+      },
+      {
+        "threads": 8,
+        "found": false,
+        "steps": 0,
+        "time": 0.03,
+        "speedup": "0.33"
+      },
+      {
+        "threads": 16,
+        "found": false,
+        "steps": 0,
+        "time": 0.02,
+        "speedup": "0.50"
+      }
+    ]
+  },
+  {
+    "grid": "256x256",
+    "trial": 3,
+    "sequential": {
+      "found": true,
+      "steps": 511,
+      "time": 628.66
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 511,
+        "time": 724.22,
+        "speedup": "0.87"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 511,
+        "time": 464.51,
+        "speedup": "1.35"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 511,
+        "time": 295.82,
+        "speedup": "2.13"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 511,
+        "time": 179.21,
+        "speedup": "3.51"
+      }
+    ]
+  },
+  {
+    "grid": "256x256",
+    "trial": 4,
+    "sequential": {
+      "found": false,
+      "steps": 0,
+      "time": 0.02
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": false,
+        "steps": 0,
+        "time": 0.1,
+        "speedup": "0.20"
+      },
+      {
+        "threads": 4,
+        "found": false,
+        "steps": 0,
+        "time": 0.05,
+        "speedup": "0.40"
+      },
+      {
+        "threads": 8,
+        "found": false,
+        "steps": 0,
+        "time": 0.05,
+        "speedup": "0.40"
+      },
+      {
+        "threads": 16,
+        "found": false,
+        "steps": 0,
+        "time": 0.05,
+        "speedup": "0.40"
+      }
+    ]
+  },
+  {
+    "grid": "256x256",
+    "trial": 5,
+    "sequential": {
+      "found": false,
+      "steps": 0,
+      "time": 976.49
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": false,
+        "steps": 0,
+        "time": 916.4,
+        "speedup": "1.07"
+      },
+      {
+        "threads": 4,
+        "found": false,
+        "steps": 0,
+        "time": 667.47,
+        "speedup": "1.46"
+      },
+      {
+        "threads": 8,
+        "found": false,
+        "steps": 0,
+        "time": 392.95,
+        "speedup": "2.49"
+      },
+      {
+        "threads": 16,
+        "found": false,
+        "steps": 0,
+        "time": 264.77,
+        "speedup": "3.69"
+      }
+    ]
+  },
+  {
+    "grid": "256x256",
+    "trial": 6,
+    "sequential": {
+      "found": true,
+      "steps": 511,
+      "time": 641.83
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 511,
+        "time": 746.54,
+        "speedup": "0.86"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 511,
+        "time": 492.2,
+        "speedup": "1.30"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 511,
+        "time": 318.33,
+        "speedup": "2.02"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 511,
+        "time": 177.97,
+        "speedup": "3.61"
+      }
+    ]
+  },
+  {
+    "grid": "256x256",
+    "trial": 7,
+    "sequential": {
+      "found": true,
+      "steps": 511,
+      "time": 791.66
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 511,
+        "time": 888.32,
+        "speedup": "0.89"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 511,
+        "time": 545.39,
+        "speedup": "1.45"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 511,
+        "time": 350.71,
+        "speedup": "2.26"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 511,
+        "time": 217.52,
+        "speedup": "3.64"
+      }
+    ]
+  },
+  {
+    "grid": "256x256",
+    "trial": 8,
+    "sequential": {
+      "found": true,
+      "steps": 511,
+      "time": 762.92
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 511,
+        "time": 776.19,
+        "speedup": "0.98"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 511,
+        "time": 496.77,
+        "speedup": "1.54"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 511,
+        "time": 358.14,
+        "speedup": "2.13"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 511,
+        "time": 190.41,
+        "speedup": "4.01"
+      }
+    ]
+  },
+  {
+    "grid": "256x256",
+    "trial": 9,
+    "sequential": {
+      "found": true,
+      "steps": 511,
+      "time": 586.03
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 511,
+        "time": 679.2,
+        "speedup": "0.86"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 511,
+        "time": 441.74,
+        "speedup": "1.33"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 511,
+        "time": 256.13,
+        "speedup": "2.29"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 511,
+        "time": 156.18,
+        "speedup": "3.75"
+      }
+    ]
+  },
+  {
+    "grid": "256x256",
+    "trial": 10,
+    "sequential": {
+      "found": false,
+      "steps": 0,
+      "time": 1023.26
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": false,
+        "steps": 0,
+        "time": 1120.38,
+        "speedup": "0.91"
+      },
+      {
+        "threads": 4,
+        "found": false,
+        "steps": 0,
+        "time": 731.99,
+        "speedup": "1.40"
+      },
+      {
+        "threads": 8,
+        "found": false,
+        "steps": 0,
+        "time": 414.18,
+        "speedup": "2.47"
+      },
+      {
+        "threads": 16,
+        "found": false,
+        "steps": 0,
+        "time": 273.14,
+        "speedup": "3.75"
+      }
+    ]
+  },
+  {
+    "grid": "512x512",
+    "trial": 1,
+    "sequential": {
+      "found": true,
+      "steps": 1023,
+      "time": 14161.12
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 1023,
+        "time": 14842.74,
+        "speedup": "0.95"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 1023,
+        "time": 11199.36,
+        "speedup": "1.26"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 1023,
+        "time": 6289.75,
+        "speedup": "2.25"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 1023,
+        "time": 3581.96,
+        "speedup": "3.95"
+      }
+    ]
+  },
+  {
+    "grid": "512x512",
+    "trial": 2,
+    "sequential": {
+      "found": true,
+      "steps": 1023,
+      "time": 16481.75
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 1023,
+        "time": 17287.25,
+        "speedup": "0.95"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 1023,
+        "time": 11160.4,
+        "speedup": "1.48"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 1023,
+        "time": 6160.08,
+        "speedup": "2.68"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 1023,
+        "time": 3316.72,
+        "speedup": "4.97"
+      }
+    ]
+  },
+  {
+    "grid": "512x512",
+    "trial": 3,
+    "sequential": {
+      "found": true,
+      "steps": 1023,
+      "time": 11738.72
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 1023,
+        "time": 14205.8,
+        "speedup": "0.83"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 1023,
+        "time": 9686.85,
+        "speedup": "1.21"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 1023,
+        "time": 5091.24,
+        "speedup": "2.31"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 1023,
+        "time": 2796.93,
+        "speedup": "4.20"
+      }
+    ]
+  },
+  {
+    "grid": "512x512",
+    "trial": 4,
+    "sequential": {
+      "found": true,
+      "steps": 1023,
+      "time": 14305.14
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 1023,
+        "time": 19982.53,
+        "speedup": "0.72"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 1023,
+        "time": 11473.4,
+        "speedup": "1.25"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 1023,
+        "time": 5887.51,
+        "speedup": "2.43"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 1023,
+        "time": 3610.91,
+        "speedup": "3.96"
+      }
+    ]
+  },
+  {
+    "grid": "512x512",
+    "trial": 5,
+    "sequential": {
+      "found": false,
+      "steps": 0,
+      "time": 0.01
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": false,
+        "steps": 0,
+        "time": 0.04,
+        "speedup": "0.25"
+      },
+      {
+        "threads": 4,
+        "found": false,
+        "steps": 0,
+        "time": 0.04,
+        "speedup": "0.25"
+      },
+      {
+        "threads": 8,
+        "found": false,
+        "steps": 0,
+        "time": 0.03,
+        "speedup": "0.33"
+      },
+      {
+        "threads": 16,
+        "found": false,
+        "steps": 0,
+        "time": 0.04,
+        "speedup": "0.25"
+      }
+    ]
+  },
+  {
+    "grid": "512x512",
+    "trial": 6,
+    "sequential": {
+      "found": true,
+      "steps": 1023,
+      "time": 14073.51
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 1023,
+        "time": 17201.34,
+        "speedup": "0.82"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 1023,
+        "time": 11247.73,
+        "speedup": "1.25"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 1023,
+        "time": 5867.01,
+        "speedup": "2.40"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 1023,
+        "time": 3359.24,
+        "speedup": "4.19"
+      }
+    ]
+  },
+  {
+    "grid": "512x512",
+    "trial": 7,
+    "sequential": {
+      "found": false,
+      "steps": 0,
+      "time": 0.06
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": false,
+        "steps": 0,
+        "time": 0.06,
+        "speedup": "1.00"
+      },
+      {
+        "threads": 4,
+        "found": false,
+        "steps": 0,
+        "time": 0.06,
+        "speedup": "1.00"
+      },
+      {
+        "threads": 8,
+        "found": false,
+        "steps": 0,
+        "time": 0.06,
+        "speedup": "1.00"
+      },
+      {
+        "threads": 16,
+        "found": false,
+        "steps": 0,
+        "time": 0.06,
+        "speedup": "1.00"
+      }
+    ]
+  },
+  {
+    "grid": "512x512",
+    "trial": 8,
+    "sequential": {
+      "found": true,
+      "steps": 1023,
+      "time": 14391.82
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 1023,
+        "time": 15262.57,
+        "speedup": "0.94"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 1023,
+        "time": 10690.59,
+        "speedup": "1.35"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 1023,
+        "time": 6243.09,
+        "speedup": "2.31"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 1023,
+        "time": 3514.86,
+        "speedup": "4.09"
+      }
+    ]
+  },
+  {
+    "grid": "512x512",
+    "trial": 9,
+    "sequential": {
+      "found": true,
+      "steps": 1023,
+      "time": 11190.35
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": true,
+        "steps": 1023,
+        "time": 10411.87,
+        "speedup": "1.07"
+      },
+      {
+        "threads": 4,
+        "found": true,
+        "steps": 1023,
+        "time": 8512.79,
+        "speedup": "1.31"
+      },
+      {
+        "threads": 8,
+        "found": true,
+        "steps": 1023,
+        "time": 5146.16,
+        "speedup": "2.17"
+      },
+      {
+        "threads": 16,
+        "found": true,
+        "steps": 1023,
+        "time": 2606.93,
+        "speedup": "4.29"
+      }
+    ]
+  },
+  {
+    "grid": "512x512",
+    "trial": 10,
+    "sequential": {
+      "found": false,
+      "steps": 0,
+      "time": 13901.54
+    },
+    "parallel": [
+      {
+        "threads": 2,
+        "found": false,
+        "steps": 0,
+        "time": 16909.66,
+        "speedup": "0.82"
+      },
+      {
+        "threads": 4,
+        "found": false,
+        "steps": 0,
+        "time": 8376.84,
+        "speedup": "1.66"
+      },
+      {
+        "threads": 8,
+        "found": false,
+        "steps": 0,
+        "time": 5588.09,
+        "speedup": "2.49"
+      },
+      {
+        "threads": 16,
+        "found": false,
+        "steps": 0,
+        "time": 2956.95,
+        "speedup": "4.70"
+      }
+    ]
+  }
+]
