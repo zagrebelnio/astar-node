@@ -41,7 +41,6 @@ function reconstructPath(node) {
   return path;
 }
 
-// Прийом вузлів з інших потоків
 parentPort.on('message', (msg) => {
   if (msg.type === 'steal_batch') {
     for (const nodeData of msg.batch) {
@@ -49,7 +48,7 @@ parentPort.on('message', (msg) => {
     }
   } else if (msg.type === 'terminate') {
     parentPort.postMessage({ type: 'not_found' });
-    process.exit(0); // Завершити worker
+    process.exit(0);
   }
 });
 
@@ -65,12 +64,12 @@ const BATCH_SIZE = 256;
 
     if (batch.length === 0) {
       parentPort.postMessage({ type: 'steal', id });
-      await new Promise((resolve) => setTimeout(resolve, 10)); // Трохи почекати
+      await new Promise((resolve) => setTimeout(resolve, 10));
       if (openList.isEmpty()) {
         parentPort.postMessage({ type: 'not_found' });
         return;
       }
-      continue; // Після крадіжки — наступна ітерація
+      continue;
     }
 
     for (const current of batch) {

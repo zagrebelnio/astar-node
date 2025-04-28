@@ -4,14 +4,12 @@ import {
   GridGraph,
   manhattan,
 } from '../astar/index.js';
-import { isValidPath } from '../astar/utils/isValidPath.js';
+import { isValidPath } from '../astar/utils/index.js';
 import { performance } from 'perf_hooks';
 import fs from 'fs';
 import path from 'path';
 
-// const sizes = [16, 32, 64, 128, 256, 512];
 const sizes = [50, 100, 150, 200, 250, 300, 350, 400, 450, 500];
-// const sizes = [3000, 4000];
 const threadCounts = [2, 4];
 const wallDensity = 0.2;
 const trials = 10;

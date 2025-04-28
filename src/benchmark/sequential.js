@@ -3,7 +3,6 @@ import { performance } from 'perf_hooks';
 import fs from 'fs';
 import path from 'path';
 
-// const sizes = [500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000];
 const sizes = [50, 100, 150, 200, 250, 300, 350, 400, 450, 500];
 const wallDensity = 0.2;
 const trials = 10;

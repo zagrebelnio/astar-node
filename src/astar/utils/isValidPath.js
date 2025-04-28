@@ -9,11 +9,11 @@ export function isValidPath(graph, path) {
     const dy = Math.abs(y1 - y2);
 
     if (!((dx === 1 && dy === 0) || (dx === 0 && dy === 1))) {
-      return false; // Некоректний рух (не сусідні клітинки)
+      return false;
     }
 
     if (graph.isWall(x2, y2)) {
-      return false; // Пройшли через стіну
+      return false;
     }
   }
 

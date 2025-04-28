@@ -7,7 +7,7 @@ export class AStarParallel {
     this.heuristic = heuristic;
     this.threadCount = threadCount;
     this.workers = [];
-    this.workerQueues = new Map(); // id -> worker
+    this.workerQueues = new Map();
   }
 
   async search(start, goal) {
@@ -60,7 +60,7 @@ export class AStarParallel {
         worker.on('message', (msg) => {
           if (msg.type === 'found' && !finished) {
             finished = true;
-            const fullPath = fixPath(msg.path, start); // ➡️ додаємо стартову вершину!
+            const fullPath = fixPath(msg.path, start);
             resolve(fullPath);
             this.workers.forEach((w) => w.terminate());
           } else if (msg.type === 'not_found') {
@@ -93,7 +93,7 @@ export class AStarParallel {
         return;
       }
     }
-    // Якщо ніхто не може віддати роботу, надсилаємо terminate
+
     const stealer = this.workerQueues.get(stealerId);
     if (stealer) {
       stealer.postMessage({ type: 'terminate' });

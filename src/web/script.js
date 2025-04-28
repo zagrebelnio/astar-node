@@ -42,12 +42,10 @@ async function loadResults() {
       const chartId = `chart-${grid.replace('x', '_')}`;
       const wrapper = document.createElement('div');
 
-      // 🔹 Заголовок
       const heading = document.createElement('h2');
       heading.textContent = `Grid ${grid}`;
       wrapper.appendChild(heading);
 
-      // 🔹 Графік
       const canvas = document.createElement('canvas');
       canvas.id = chartId;
       canvas.width = 800;
@@ -89,7 +87,6 @@ async function loadResults() {
         },
       });
 
-      // 🔹 Таблиця
       const table = document.createElement('table');
       table.innerHTML = `
       <thead>
