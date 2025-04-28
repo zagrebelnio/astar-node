@@ -35,6 +35,10 @@ async function loadResults() {
         .sort((a, b) => a - b);
       const avgPar = labels.map((threads) => average(parallelMap[threads]));
 
+      const avgSpeedUps = labels.map(
+        (threads) => avgSeq / average(parallelMap[threads])
+      );
+
       const chartId = `chart-${grid.replace('x', '_')}`;
       const wrapper = document.createElement('div');
 
@@ -93,6 +97,7 @@ async function loadResults() {
           <th>Mode</th>
           <th>Threads</th>
           <th>Avg Time (ms)</th>
+          <th>Avg Speed-up</th>
         </tr>
       </thead>
       <tbody>
@@ -100,6 +105,7 @@ async function loadResults() {
           <td>Sequential</td>
           <td>-</td>
           <td>${avgSeq.toFixed(2)}</td>
+          <td>-</td>
         </tr>
         ${labels
           .map(
@@ -108,6 +114,7 @@ async function loadResults() {
             <td>Parallel</td>
             <td>${threads}</td>
             <td>${avgPar[i].toFixed(2)}</td>
+            <td>${avgSpeedUps[i].toFixed(2)}x</td>
           </tr>
         `
           )

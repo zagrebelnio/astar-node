@@ -1,42 +1,42 @@
 [
   {
     "size": 50,
-    "avgTime": "7.03"
+    "avgTime": "60.95"
   },
   {
     "size": 100,
-    "avgTime": "24.40"
+    "avgTime": "87.86"
   },
   {
     "size": 150,
-    "avgTime": "77.73"
+    "avgTime": "139.87"
   },
   {
     "size": 200,
-    "avgTime": "201.61"
+    "avgTime": "210.41"
   },
   {
     "size": 250,
-    "avgTime": "457.75"
+    "avgTime": "322.23"
   },
   {
     "size": 300,
-    "avgTime": "842.94"
+    "avgTime": "458.31"
   },
   {
     "size": 350,
-    "avgTime": "1820.39"
+    "avgTime": "657.32"
   },
   {
     "size": 400,
-    "avgTime": "3248.91"
+    "avgTime": "1078.03"
   },
   {
     "size": 450,
-    "avgTime": "5165.80"
+    "avgTime": "1651.31"
   },
   {
     "size": 500,
-    "avgTime": "6678.40"
+    "avgTime": "2835.45"
   }
 ]

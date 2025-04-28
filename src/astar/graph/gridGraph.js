@@ -1,8 +1,8 @@
 export class GridGraph {
-  constructor(size, allowDiagonal = false) {
+  constructor(size, walls = null, allowDiagonal = false) {
     this.size = size;
     this.allowDiagonal = allowDiagonal;
-    this.walls = new Set();
+    this.walls = walls ? new Set(walls) : new Set();
   }
 
   clone() {

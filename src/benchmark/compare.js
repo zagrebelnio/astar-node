@@ -4,12 +4,15 @@ import {
   GridGraph,
   manhattan,
 } from '../astar/index.js';
+import { isValidPath } from '../astar/utils/isValidPath.js';
 import { performance } from 'perf_hooks';
 import fs from 'fs';
 import path from 'path';
 
-const sizes = [16, 32, 64, 128, 256, 512];
-const threadCounts = [2, 4, 8, 16];
+// const sizes = [16, 32, 64, 128, 256, 512];
+const sizes = [50, 100, 150, 200, 250, 300, 350, 400, 450, 500];
+// const sizes = [3000, 4000];
+const threadCounts = [2, 4];
 const wallDensity = 0.2;
 const trials = 10;
 const allowDiagonal = false;
@@ -26,6 +29,7 @@ function runTestSequential(graph, start, end) {
     found: !!path,
     steps: path?.length || 0,
     time: +(t1 - t0).toFixed(2),
+    path,
   };
 }
 
@@ -39,6 +43,7 @@ async function runTestParallel(graph, start, end, threads) {
     found: !!path,
     steps: path?.length || 0,
     time: +(t1 - t0).toFixed(2),
+    path,
   };
 }
 
@@ -62,6 +67,10 @@ for (const size of sizes) {
     const graphSeq = original.clone();
     const seq = runTestSequential(graphSeq, start, end);
 
+    if (seq.found && !isValidPath(graphSeq, seq.path)) {
+      console.log('❌ Sequential path is invalid!');
+    }
+
     console.log(
       `  Trial ${t + 1} (Sequential): Path=${seq.found} Steps=${
         seq.steps
@@ -81,6 +90,12 @@ for (const size of sizes) {
       const par = await runTestParallel(graphPar, start, end, threads);
 
       const speedUp = (seq.time / par.time).toFixed(2);
+
+      if (par.found && !isValidPath(graphPar, par.path)) {
+        console.log(
+          `❌ Invalid path found! (Parallel ${threads} threads, Trial ${t + 1})`
+        );
+      }
 
       console.log(
         `    ↳ Parallel (${threads} threads): Path=${par.found} Steps=${par.steps} Time=${par.time}ms Speed-up: ${speedUp}x`

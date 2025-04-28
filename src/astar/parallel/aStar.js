@@ -1,86 +1,102 @@
-import { PriorityQueue } from '../core/index.js';
+import { Worker } from 'node:worker_threads';
+import path from 'path';
 
 export class AStarParallel {
   constructor(graph, heuristic, threadCount = 4) {
     this.graph = graph;
     this.heuristic = heuristic;
     this.threadCount = threadCount;
+    this.workers = [];
+    this.workerQueues = new Map(); // id -> worker
   }
 
   async search(start, goal) {
-    const openQueues = Array.from(
-      { length: this.threadCount },
-      () => new PriorityQueue()
-    );
-    const closedSet = new Set();
-    const nodeMap = new Map();
+    function fixPath(path, start) {
+      if (!path || path.length === 0) return [start];
 
-    const key = (pos) => `${pos[0]},${pos[1]}`;
-
-    const startNode = {
-      position: start,
-      g: 0,
-      h: this.heuristic({ position: start }, { position: goal }),
-      f: 0,
-      parent: null,
-    };
-    startNode.f = startNode.g + startNode.h;
-
-    openQueues[0].enqueue(startNode);
-    nodeMap.set(key(start), startNode);
-
-    while (openQueues.some((q) => !q.isEmpty())) {
-      const batch = openQueues.map((q) => q.dequeue()).filter(Boolean);
-
-      for (const current of batch) {
-        const currentKey = key(current.position);
-        if (closedSet.has(currentKey)) continue;
-
-        closedSet.add(currentKey);
-
-        if (currentKey === key(goal)) {
-          return this.reconstructPath(current);
-        }
-
-        const neighbors = this.graph.getNeighbors(current);
-        for (const pos of neighbors) {
-          const nKey = key(pos);
-
-          if (closedSet.has(nKey)) continue;
-
-          const g = current.g + 1;
-
-          let neighbor = nodeMap.get(nKey);
-          const h = this.heuristic({ position: pos }, { position: goal });
-          const f = g + h;
-
-          if (!neighbor || g < neighbor.g) {
-            neighbor = {
-              position: pos,
-              g,
-              h,
-              f,
-              parent: current,
-            };
-            nodeMap.set(nKey, neighbor);
-
-            const randomQueue = Math.floor(Math.random() * this.threadCount);
-            openQueues[randomQueue].enqueue(neighbor);
-          }
-        }
+      const [firstX, firstY] = path[0];
+      if (firstX !== start[0] || firstY !== start[1]) {
+        return [start, ...path];
       }
+
+      return path;
     }
 
-    return null; // path not found
+    return new Promise((resolve, reject) => {
+      let finished = false;
+      let notFoundCount = 0;
+
+      const sharedData = {
+        size: this.graph.size,
+        walls: [...this.graph.walls],
+        allowDiagonal: this.graph.allowDiagonal,
+        goal,
+        heuristicName: this.heuristic.name,
+      };
+
+      const neighbors = this.graph.getNeighbors({ position: start });
+      const startingPoints =
+        neighbors.length >= this.threadCount
+          ? neighbors.slice(0, this.threadCount)
+          : neighbors.concat(
+              Array(this.threadCount - neighbors.length).fill(start)
+            );
+
+      for (let i = 0; i < this.threadCount; i++) {
+        const worker = new Worker(
+          path.resolve('./src/astar/parallel/workers/worker.js'),
+          {
+            workerData: {
+              id: i,
+              threadCount: this.threadCount,
+              sharedData,
+              startPoint: startingPoints[i],
+            },
+          }
+        );
+
+        this.workerQueues.set(i, worker);
+
+        worker.on('message', (msg) => {
+          if (msg.type === 'found' && !finished) {
+            finished = true;
+            const fullPath = fixPath(msg.path, start); // ➡️ додаємо стартову вершину!
+            resolve(fullPath);
+            this.workers.forEach((w) => w.terminate());
+          } else if (msg.type === 'not_found') {
+            notFoundCount++;
+            if (notFoundCount === this.threadCount && !finished) {
+              finished = true;
+              resolve(null);
+            }
+          } else if (msg.type === 'steal') {
+            this.handleStealRequest(msg.id);
+          }
+        });
+
+        worker.on('error', reject);
+        worker.on('exit', (code) => {
+          if (code !== 0 && !finished) {
+            reject(new Error(`Worker stopped with exit code ${code}`));
+          }
+        });
+
+        this.workers.push(worker);
+      }
+    });
   }
 
-  reconstructPath(node) {
-    const path = [];
-    let current = node;
-    while (current) {
-      path.unshift(current.position);
-      current = current.parent;
+  handleStealRequest(stealerId) {
+    for (const [id, worker] of this.workerQueues) {
+      if (id !== stealerId) {
+        worker.postMessage({ type: 'give_work', to: stealerId });
+        return;
+      }
     }
-    return path;
+    // Якщо ніхто не може віддати роботу, надсилаємо terminate
+    const stealer = this.workerQueues.get(stealerId);
+    if (stealer) {
+      stealer.postMessage({ type: 'terminate' });
+    }
   }
 }
